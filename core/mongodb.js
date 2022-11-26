@@ -10,10 +10,6 @@ const CONFIG = require('../app.config.js')
 const mongoose = require('mongoose')
 const autoIncrement = require('mongoose-auto-increment')
 
-// remove DeprecationWarning
-// mongoose.set('useFindAndModify', false)
-
-
 // mongoose Promise
 mongoose.Promise = global.Promise
 
@@ -30,10 +26,6 @@ exports.connect = () => {
 	}).catch(() => {
 		consola.warn('数据库连接失败!')
 	})
-	// mongoose.connect('mongodb://localhost:27017/blogNode', {
-	// 	useMongoClient: true,
-	// 	promiseLibrary: global.Promise
-	// })
 
 	// 自增 ID 初始化
 	autoIncrement.initialize(mongoose.connection)
