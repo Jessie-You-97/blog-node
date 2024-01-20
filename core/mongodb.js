@@ -18,7 +18,7 @@ exports.mongoose = mongoose
 
 // connect
 exports.connect = () => {
-    console.log('CONFIG.MONGODB.uri :', CONFIG.MONGODB.uri)
+    // console.log('CONFIG.MONGODB.uri :', CONFIG.MONGODB.uri)
 	
 	// 连接数据库
 	mongoose.connect('mongodb://localhost:27017/blogNode').then(() => {

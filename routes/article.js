@@ -176,7 +176,6 @@ exports.getArticleList = (req, res) => {
     count: 0,
     list: [],
   };
-  console.log(conditions)
   Article.countDocuments({}, (err, count) => {
     if (err) {
       console.log('Error:' + err);
