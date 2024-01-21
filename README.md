@@ -36,8 +36,8 @@ blog-node 是采用了主流的前后端分离思想的，主里只讲 后端。
 - express: "~4.16.0"
 - express-session : "^1.15.6",
 - http-errors : "~1.6.2",
-- mongodb : "^3.1.8",
-- mongoose : "^5.3.7",
+- mongodb: "^4.12.1",
+- mongoose: "^6.7.3",
 - mongoose-auto-increment : "^5.0.1",
 - yargs : "^12.0.2"
 
